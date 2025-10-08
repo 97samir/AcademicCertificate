@@ -1,28 +1,42 @@
-REMIX DEFAULT WORKSPACE
+# 🎓 AcademicCertificateNFT
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Este proyecto permite emitir, verificar y revocar certificados académicos digitales en forma de NFT, garantizando su autenticidad y trazabilidad en una red blockchain (como Polygon o Ethereum).
 
-This workspace contains 3 directories:
+## 🚀 Descripción
+El contrato inteligente **AcademicCertificate** fue desarrollado en Solidity y utiliza la librería **OpenZeppelin** para implementar el estándar ERC-721 (NFTs).  
+Su objetivo es permitir que una institución educativa emita certificados únicos e inalterables a estudiantes, manteniendo la transparencia y validez de cada título emitido.
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+## 🧱 Funcionalidades principales
+- **Emitir certificado:** Crea un NFT con los datos del estudiante y el curso.
+- **Revocar certificado:** Permite invalidar un certificado si se detecta un error o fraude.
+- **Verificar validez:** Cualquier persona puede consultar si un certificado sigue siendo válido.
 
-SCRIPTS
+## ⚙️ Requisitos
+- **Remix IDE** o entorno de desarrollo Solidity.
+- **MetaMask** conectado a la red de prueba (como Polygon Amoy).
+- **MATIC o ETH de prueba** para realizar las transacciones.
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+## 🧩 Tecnologías utilizadas
+- **Solidity 0.8.20**  
+- **OpenZeppelin Contracts 4.9.3**  
+- **ERC721 (NFT)**  
+- **Ownable (control de propiedad del contrato)**  
 
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+## 🧠 Cómo usarlo
+1. Compila el contrato en Remix.
+2. Conéctate con MetaMask (Polygon Amoy Testnet).
+3. Despliega el contrato (`Deploy`).
+4. Usa las funciones disponibles:
+   - `issueCertificate()` → emitir nuevo certificado.
+        to (destino),tokenURI (hash),studentName,institutionName,courseName
+   - `revokeCertificate()` → revocar certificado. = tokenId
+   - `isCertificateValid()` → consultar si sigue activo. = tokenId
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+## 📜 Licencia
+Este proyecto usa la licencia **MIT**, lo que permite su uso y adaptación libremente para fines educativos o de desarrollo.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+---
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+## 👤 Autor
+Desarrollado por **[Tu nombre]**  
+Proyecto académico basado en certificación blockchain.
