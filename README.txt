@@ -1,28 +1,28 @@
-# 🎓 AcademicCertificateNFT
+# AcademicCertificateNFT
 
 Este proyecto permite emitir, verificar y revocar certificados académicos digitales en forma de NFT, garantizando su autenticidad y trazabilidad en una red blockchain (como Polygon o Ethereum).
 
-## 🚀 Descripción
+## Descripción
 El contrato inteligente **AcademicCertificate** fue desarrollado en Solidity y utiliza la librería **OpenZeppelin** para implementar el estándar ERC-721 (NFTs).  
 Su objetivo es permitir que una institución educativa emita certificados únicos e inalterables a estudiantes, manteniendo la transparencia y validez de cada título emitido.
 
-## 🧱 Funcionalidades principales
+## Funcionalidades principales
 - **Emitir certificado:** Crea un NFT con los datos del estudiante y el curso.
 - **Revocar certificado:** Permite invalidar un certificado si se detecta un error o fraude.
 - **Verificar validez:** Cualquier persona puede consultar si un certificado sigue siendo válido.
 
-## ⚙️ Requisitos
+## Requisitos
 - **Remix IDE** o entorno de desarrollo Solidity.
 - **MetaMask** conectado a la red de prueba (como Polygon Amoy).
 - **MATIC o ETH de prueba** para realizar las transacciones.
 
-## 🧩 Tecnologías utilizadas
+## Tecnologías utilizadas
 - **Solidity 0.8.20**  
 - **OpenZeppelin Contracts 4.9.3**  
 - **ERC721 (NFT)**  
 - **Ownable (control de propiedad del contrato)**  
 
-## 🧠 Cómo usarlo
+## Cómo usarlo
 1. Compila el contrato en Remix.
 2. Conéctate con MetaMask (Polygon Amoy Testnet).
 3. Despliega el contrato (`Deploy`).
@@ -32,11 +32,11 @@ Su objetivo es permitir que una institución educativa emita certificados único
    - `revokeCertificate()` → revocar certificado. = tokenId
    - `isCertificateValid()` → consultar si sigue activo. = tokenId
 
-## 📜 Licencia
+## Licencia
 Este proyecto usa la licencia **MIT**, lo que permite su uso y adaptación libremente para fines educativos o de desarrollo.
 
 ---
 
-## 👤 Autor
-Desarrollado por **[Tu nombre]**  
+## Autor
+Desarrollado por **Samir Chura Oscco**  
 Proyecto académico basado en certificación blockchain.
