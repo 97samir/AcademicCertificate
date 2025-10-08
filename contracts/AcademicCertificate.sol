@@ -39,7 +39,7 @@ contract AcademicCertificate is ERC721URIStorage, Ownable {
             courseName: courseName,
             isRevoked: false
         });
-
+        // Registra las acciones
         emit CertificateIssued(tokenId, to, courseName);
     }
 
@@ -52,6 +52,7 @@ contract AcademicCertificate is ERC721URIStorage, Ownable {
 
         require(!certificates[tokenId].isRevoked, "El certificado ya fue revocado");
         certificates[tokenId].isRevoked = true;
+        // Registra las acciones
         emit CertificateRevoked(tokenId);
     }
 

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -647,7 +647,7 @@
 		"compilationTarget": {
 			"contracts/AcademicCertificate.sol": "AcademicCertificate"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -788,11 +788,11 @@
 			]
 		},
 		"contracts/AcademicCertificate.sol": {
-			"keccak256": "0x72b0fa2f8251141bb3444ee81467a34953100e90a735a5a57aa960daf54360ed",
+			"keccak256": "0xef0b5f043beb24b035b8410aa21b0b8026dafa09bb5c75feea8e3c6b95133283",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://33014284a84a68bbcc463bf5b3fecc9deee5139cd4f4400a70cb6fc3f2891f9d",
-				"dweb:/ipfs/QmVTmmiytbSd5wEbvQFHnfbXFf9Umeu3Er4fkT5auJQP7a"
+				"bzz-raw://56b85de5945a134ccb63b4a6d68dcbc8954e4e3de0ee584dd6a67f69b3ba1567",
+				"dweb:/ipfs/QmUEpL3Xc2XfQYyCYoPBS1dyXYs9vVxZr92HxF8KZQbRS1"
 			]
 		}
 	},
