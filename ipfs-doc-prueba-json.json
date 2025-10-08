@@ -1,0 +1,10 @@
+{
+  "name": "Certificado Académico - Samir Chura",
+  "description": "Certificado emitido por Certus, trazado en blockchain.",
+  "document": "https://amber-neighbouring-parrot-10.mypinata.cloud/ipfs/bafkreifgst4hwqwezlzglkp4gsr2p5vkpirvxpkirwoawvkgrh5t5dmpye",
+  "attributes": {
+    "institucion": "Certus",
+    "programa": "Diseño de Software",
+    "fecha": "2025-09-30"
+  }
+}
